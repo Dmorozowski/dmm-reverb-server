@@ -15,7 +15,7 @@ app.use("/auth", user);
 // app.use(require("./middleware/validateSession"));
 app.use("/concerts", concerts);
 
-app.listen(3000, function() {
+app.listen(process.env.PORT, function() {
   console.log(
     "I've been to the year 3000. Not much has changed but they live underwater."
   );
